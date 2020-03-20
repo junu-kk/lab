@@ -12,10 +12,9 @@
 
 2. only_our_students.py를 더블클릭해 실행하시면 됩니다.
 
-#### 주의사항 :
-이름이 두글자일때와 세글자일때만 고려했습니다.
-4글자 이상의 이름을 가진 학생은, 첫 3글자가 같으면 있는 것으로 여겨집니다.
-따라서 대부분 정확하겠지만, 100% 정확성을 보장하진 않습니다.
+#### 유의사항 :
+제 컴퓨터에선 안정적으로 돌아갑니다만, 혹시나 발생하게 될 채점오류에 대해 책임을 지지 않습니다.
+(맥에서 오작동한다는 제보가 들어왔으니, 가급적이면 윈도우로 돌려주세요.)
 
 즐거운 채점 되세요.
 '''
@@ -63,7 +62,14 @@ def main():
 
   #만약 학생이 학생리스트에 없을 경우, 과제파일을 삭제합니다.
   for hwname in homeworks:
-    if not (hwname[:3] in students or (hwname[:2] in students and hwname[2]=='2')):
+    delete=True
+    for student in students:
+      #student와 hwname앞부분 일치할때 break
+      if student==hwname[:len(student)]:
+        delete=False
+        break
+    
+    if delete:
       print(f'removing {hwname}')
       os.remove(hwname)
   
