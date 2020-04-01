@@ -1,7 +1,8 @@
 # only_our_students :memo:
+<br/><br/>
 
-
-## 제작자 : 실습조교 컴퓨터교육과 강준우
+## 제작자 : 
+실습조교 컴퓨터교육과 [**강준우**](https://github.com/KangJunewoo)
 <br/><br/>
 
 
