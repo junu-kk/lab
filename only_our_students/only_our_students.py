@@ -15,8 +15,8 @@ def close_program(students, processed_students):
 #msg를 띄우며 프로그램을 종료하는 함수입니다.
 def exit_process(msg):
   print(msg)
+  print('엔터를 누르시면 프로그램을 종료합니다.')
   sys.stdin.readline()
-  input('엔터를 누르시면 프로그램을 종료합니다.')
   exit()
 
 #디렉토리 내 txt파일 개수에 따라 처리해주는 함수입니다.
