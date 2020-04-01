@@ -12,3 +12,7 @@ output : 파일명은 학생이름_원래파일명으로 통일.
   py폴더
   exe폴더
   etc폴더(png, jpg, jpeg 등이 들어갈듯.)
+
+caution
+  외자 이름 존재
+  동명이인 존재
