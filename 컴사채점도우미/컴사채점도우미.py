@@ -38,7 +38,7 @@ def process_txts(txts):
 #메인함수입니다.
 def main():
   homeworks=os.listdir()
-  del homeworks[homeworks.index('only_our_students.py')]
+  del homeworks[homeworks.index('컴사채점도우미.py')]
   txts=[]
   for hw in homeworks:
     if hw[-4:]=='.txt':
